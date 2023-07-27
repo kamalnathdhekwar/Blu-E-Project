@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blu-E Shashtav Bharat </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+ 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="card_bundle.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- card style -->
+  </head>
+
+  <body>
+    <div class="bg-blue-gray-50">
+      <header class="sticky top-0 z-30 w-full px-2 py-4 bg-white shadow-lg shadow-indigo-900/40 sm:px-4">
+        <div class="flex items-center justify-between mx-auto max-w-7xl">
+          <a href="index.html" class="ml-3">
+           <img src="./assets/blue logo.jpg" alt="" class="md:h-11 h-8">
+          </a>
+          <div class="flex items-center space-x-1 ">
+            <ul class="hidden space-x-2 md:inline-flex">
+              <li><a href="index.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Home</a></li>
+              <li><a href="Services.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Services</a></li>
+              <li><a href="about.html" class="px-4 py-2 font-semibold text-gray-800 rounded">About Us</a></li>
+              <li><a href="contact.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Contact Us</a></li>
+              <li><a href="FAQS.html" class="px-4 py-2 font-semibold text-gray-800 rounded">FAQS</a></li>
+            </ul>
+            <div class="inline-flex md:hidden" x-data="{ open: false }">
+              <button class="flex-none px-2 " @click="open = true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h19M4 12h19M4 18h19" />
+                </svg>
+                <span class="sr-only">Open Menu</span>
+              </button>
+              <div
+                class="absolute top-0  right-0 z-50 flex flex-col p-2 pb-4 m-4 space-y-3 bg-indigo-100 g-violet-100b rounded shadow-slate-600 shadow-lg"
+                x-show.transition="open" @click.away="open = false" x-cloak>
+                <button class="self-end flex-none px-2 ml-2" @click="open = false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span class="sr-only">Close Menu</span>
+                </button>
+                <ul class="space-y-10 text-center  p-12 ">
+                  <li><a href="index.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Home</a></li>
+                  <li><a href="Services.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Services</a></li>
+                  <li><a href="about.html" class="px-4 py-2 font-semibold text-gray-800 rounded">About Us</a></li>
+                  <li><a href="contact.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Contact Us</a></li>
+                  <li><a href="FAQS.html" class="px-4 py-2 font-semibold text-gray-800 rounded">FAQS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero section -->
+      <div class="">
+        <img src="./assets/ev2_img.jpg" alt="" class="w-full">
+      </div>
+
+      <div class="mt-10 " id="more">
+        <!-- service heading -->
+        <div class="text-center p-1">
+          <h1 class="md:text-[30px] text-[24px] font-bold text-indigo-800 px-4">EV CHARGING SOLUTIONS FOR YOU</h1>
+          <p  class="md:text-lg font-medium text-slate-600 px-6">The fast, safe and easy way to charge your electric vehicle</p>
+        </div>
+        <!-- service cards-->
+        <div class="slide-container swiper  ">
+          <div class="slide-content bg-indigo-100 py-8 px-3 rounded-xl ">
+                      <div class="card-wrapper swiper-wrapper ">
+      
+                                       <!-- card 1 start -->
+      <div class="card swiper-slide shadow-lg shadow-gray-400 rounded-4xl hover:shadow-xl hover:shadow-gray-500 bg-white  py-2 ">
+          <!-- top -->
+          <div class="pt-3"><img src="./assets/home_station.jpg" alt="home" class="h-44 m-auto"></div>
+          <!-- bottom -->
+          <div class="text-center p-4">
+            <h2  class="font-semibold text-cyan-950 text-lg">HOME</h2>
+            <p  class="">Get a charging station <br>for your home</p>
+          </div>
+      </div>
+      <!-- card 1 ended -->
+      
+      
+                          <!-- card 2 start -->
+      <div class="card swiper-slide shadow-lg shadow-gray-400 rounded-4xl hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0  py-2">
+          <!-- top -->
+          <div class="pt-3"><img src="./assets/ev_commertial.png" alt="home" class="h-44 m-auto"></div>
+          <!-- bottom -->
+          <div class="text-center p-4">
+            <h2  class="font-semibold text-cyan-950 text-lg">COMMERCIAL</h2>
+            <p  class="">Attract EV owners with <br> chargers in your premisses</p>
+          </div>
+      </div>
+      <!-- card 2 ended -->
+                          
+                      <!-- card 3 start -->
+      <div class="card swiper-slide shadow-lg shadow-gray-400 rounded-4xl hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0  py-2">
+          <!-- top -->
+          <div class="pt-3"><img src="./assets/fleet_new.jpg" alt="home" class="h-44 m-auto"></div>
+          <!-- bottom -->
+          <div class="text-center p-4">
+            <h2  class="font-semibold text-cyan-950 text-lg">FLEET</h2>
+            <p  class="">Electrify your fleet with <br> our smart Charging Solutions</p>
+          </div>
+      </div>
+      <!-- card 3 ended -->                 
+             
+                    <!-- card 4 start -->
+                    <div class="card swiper-slide shadow-lg shadow-gray-400 rounded-4xl hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0  py-2">
+                      <!-- top -->
+                      <div class="pt-3"><img src="./assets/workplace_temp.webp" alt="home" class="h-44 m-auto"></div>
+                      <!-- bottom -->
+                      <div class="text-center p-4">
+                        <h2  class="font-semibold text-cyan-950 text-lg">WORKPLACE</h2>
+                        <p  class="">Get charging stations for <br>staffs and visitors</p>
+                      </div>
+                  </div>
+                  <!-- card 4 ended -->
+      
+                          <!-- card 5 start -->
+      <div class="card swiper-slide shadow-lg shadow-gray-400 rounded-4xl hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0  ">
+          <!-- top -->
+          <div class="pt-3"><img src="./assets/Construction_card.jpg" alt="home" class="h-44 m-auto"></div>
+          <!-- bottom -->
+          <div class="text-center p-2">
+            <h2  class="font-semibold text-cyan-950 text-[17px]">UNDER CONSTRUCTION <br> PROJECTS</h2>
+            <p  class="text-sm">Enhance your amenities by <br>providing charging stations <br> to your new projects</p>
+          </div>
+      </div>
+      <!-- card 5 ended -->
+            </div> 
+            <!-- card section ended  -->
+      
+      
+                  
+                  <div class="swiper-button-next swiper-navBtn shadow-md shadow-gray-900 px-6 py-6 rounded-full"></div>
+                  <div class="swiper-button-prev swiper-navBtn shadow-md shadow-gray-900 px-6 py-6 rounded-full"></div>
+                  <div class="swiper-pagination"></div>
+              </div>
+         <!-- service cards ended here -->
+         
+      
+      
+        </div>
+       
+       
+      
+<!-- more service section -->
+<div class="">
+  <!-- main -->
+  <div class=" flex   justify-evenly md:flex-row flex-col mx-5" id="service_paragraph ">
+    <!-- left section -->
+     <div class="md:w-[35%]  p-3 mt-12 ">
+      <img src="./assets/services_section.jpeg" alt="" class="">
+     </div>
+     <!-- right section -->
+     <div class="md:w-[50%] w-full p-3 md:mt-9 mt-3">
+     
+      <p class="md:text-xl text-lg text-justify mt-4 "> <span class="text-indigo-900 text-xl md:text-2xl font-semibold">BLU-</span ><span class="text-yellow-500 text-xl md:text-2xl font-semibold">E</span>
+         is provider of charging station services for electric vehicles. As a pioneer in the field, we are committed to facilitating the widespread adoption of electric transportation by offering convenient and reliable charging solutions. Our charging stations are strategically located in key areas to ensure easy access for electric vehicle owners, whether it be at homes, workplaces, commercial establishments, or public spaces.</p>
+         
+     </div>
+     </div>
+
+
+  <!-- more information on service section -->
+  <div class="mt-8">
+    <div class="text-[17px]">
+      <!-- 1st -->
+      <div class="1 shadow-lg shadow-gray-200 mx-4 p-2 bg-white">
+        <p class="md:text-xl  text-justify">At <span class="text-indigo-900 text-xl md:text-2xl font-semibold">BLU-</span ><span class="text-yellow-500 text-xl md:text-2xl font-semibold">E</span> , we understand the importance of efficient charging infrastructure for electric vehicles. Our state-of-the-art charging stations are equipped with advanced technologies, ensuring fast charging times and optimal performance. We prioritize user convenience by offering user-friendly interfaces and payment options, allowing seamless charging experiences.</p>
+      </div>
+      <div class="">
+        <!-- 2nd -->
+        <div class="1 shadow-lg shadow-gray-200 mx-4 p-2 bg-white  ">
+          <p class="md:text-xl  text-justify ">We pride ourselves on our commitment to sustainability and environmental responsibility. Our charging stations utilize clean energy sources, further reducing carbon emissions and promoting a greener future. With our reliable network of charging stations, electric vehicle owners can confidently embark on their journeys, knowing that they have a dependable charging partner along the way.
+            Our dedicated team of professionals ensures the maintenance and operational efficiency of our charging stations, providing 24/7 support and assistance. We strive to deliver exceptional service, constantly monitoring and upgrading our infrastructure to meet the evolving needs of electric vehicle users.
+          </p>
+        </div>
+        <div class="">
+          <!-- 3rd -->
+          <div class="1 shadow-lg shadow-gray-200 mx-4 p-2 bg-white">
+            <p class="md:text-xl  text-justify">Choose Us ,as your charging station service provider and join the electric revolution. Experience the convenience, reliability, and environmental benefits of our cutting-edge charging solutions, as we work together towards a sustainable future.</p>
+          </div>
+    </div>
+   </div>
+</div>
+  </div>
+  <!-- service paragraph -->
+
+
+ <!-- footer  -->
+ <footer class="footer-section ">
+
+  <div class="footer-left space-y-5">
+<img src="./assets/blueE symbol.jpg " class="bg-black  h-[100%]  ">
+      <h1 class="text-slate-800 mt-3 text-lg">About Blu-E</h1>
+      <p class="footer-company-about text-slate-800">
+          
+        <b class="text-slate-800">Shashtav Charging Bharat Private Limited</b> is a MSME registered and Startup India recognized startup by two young Indian entrepreneurs with a brand name as BLU-E. 
+       </p>
+       <h1 class="mt-2 text-slate-800 font-normal">CIN: U27900MH2023PTC401951</h1>
+      
+      
+  </div>
+
+  <div class="footer-center space-y-8 ">
+    <p class="footer-links text-slate-800 m-auto">
+      <a href="index.html" >Home</a>
+      |
+      <a href="Services.html">Services</a>
+      |
+      <a href="about.html">About Us</a>
+      |
+      <a href="contact.html">Contact Us</a>
+      |
+      <a href="FAQS.html">FAQS</a>
+            </p>
+  <div class="footer-icons text-sm  space-x-3">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#"><i class="fa fa-youtube"></i></a>
+  </div>
+    
+
+  </div>
+  <div class="footer-right space-y-4 w-full">
+    <div class="flex space-x-4 ">
+      <i class="fa fa-map-marker bg-indigo-900 text-white p-3 px-4 rounded-3xl "></i>
+      <a href="https://www.google.co.in/maps/place/KAP's+REGENCY/@21.1786312,79.0568948,18.26z/data=!4m10!1m2!2m1!1sD-5+KAP's+Regency,+Behind+Ramdeobaba+Mandir,+Gittikhadan,+Nagpur-+440013+Pension+Nagar,+Nagpur+-+440013!3m6!1s0x3bd4c1af7b0e8cdb:0x734fc4553cf55fd5!8m2!3d21.1777928!4d79.0565919!15sCmdELTUgS0FQJ3MgUmVnZW5jeSwgQmVoaW5kIFJhbWRlb2JhYmEgTWFuZGlyLCBHaXR0aWtoYWRhbiwgTmFncHVyLSA0NDAwMTMgUGVuc2lvbiBOYWdhciwgTmFncHVyIC0gNDQwMDEzkgESYXBhcnRtZW50X2J1aWxkaW5n4AEA!16s%2Fg%2F11by_gfsdd?entry=ttu">  <p class=" text-slate-900  "> 
+        D-5 KAP's Regency, <br> Nagpur- 440013 </p></a>
+  </div>
+
+  <div class="flex space-x-4">
+      <i class="fa fa-phone  bg-indigo-900 text-white p-3 px-[14px] rounded-full"></i>
+      <p>+91 7620087268  <br>  +91 8830973806</p>
+  </div>
+  <div class="flex space-x-4">
+      <i class="fa fa-envelope  bg-indigo-900 text-white p-3 px-[12px] rounded-full"></i>
+      <p><a href="mailto:info@blu-e.in " class="text-yellow-600">info@blu-e.in</a></p>
+  </div>
+  <div class="mt-5 ">
+    <p class="text-slate-800 ">© 2023 Shashtav Charging Bharat Pvt. Ltd.</p>
+</div>
+     
+      </div>
+      
+</footer>
+
+ </div> 
+
+
+
+</body>
+<!-- Swiper JS -->
+<script src="card_bundle.js"></script>
+
+<!-- JavaScript -->
+<script src="card.js"></script>
+</html>

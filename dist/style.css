@@ -1,0 +1,236 @@
+
+
+/* navigation bar  */
+
+div header li a{
+  font-size: 18px;
+}
+div header li a:hover{
+ 
+  color: #3e00ba;
+  animation-name: nav;
+  animation-duration:1s;
+ }
+
+@keyframes nav {
+  from{
+    font-size: 18px;
+  }
+  from{
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 880px) {
+  div header li a{
+    font-size: 16px;
+  }
+}
+/* /* The footer -section  */
+
+footer{
+	position: relative;
+	bottom: 0px;
+	
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	}
+.footer-section{
+	
+	border-top: 2px solid rgb(255, 247, 0);
+    /* background: linear-gradient(to right , rgb(225, 0, 255) , aqua); */
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+    margin-bottom: 0px;
+   
+}
+.footer-section .footer-left,
+.footer-section .footer-center,
+.footer-section .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-section .footer-left{
+	width: 30%;
+}
+
+.footer-section h3{
+	color:  #000000;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+/* The company logo */
+
+.footer-section .footer-left img{
+	width: 30%;
+}
+
+
+/* Footer links */
+.footer-section .footer-links{
+	color:  #050505;
+	margin: 20px 0 12px;
+}
+.footer-section .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-section .footer-company-name{
+	color:  #000000;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-section .footer-center{
+	width: 35%;
+	
+}
+
+.footer-section .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 32px;
+}
+.footer-section .footer-center p{
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	margin:0;
+}
+.footer-section .footer-center p span{
+	display:block;
+	
+	
+	
+}
+
+
+
+/* Footer Right section */
+
+.footer-section .footer-right{
+	width: 30%;
+
+}
+
+.footer-section .footer-company-about{
+	line-height: 20px;
+	color:  #0c0c0c;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-section .footer-company-about span{
+	display: block;
+	color:  #000000;
+	font-size: 18px;
+	font-weight:600;
+	margin-bottom: 20px;
+}
+
+.footer-section .footer-icons{
+	margin-top: 25px;
+  
+}
+
+
+.footer-section .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #180379f6;
+	border-radius: 2px;
+   border-radius: 5px;
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+	
+	
+}
+.footer-section .footer-icons a:hover{
+    background: linear-gradient(to right , rgb(255, 23, 236) , rgb(154, 49, 215));
+}
+.footer-section .footer-links a:hover{
+text-decoration: underline 1px;
+
+
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-section .footer-left,
+	.footer-section .footer-center,
+	.footer-section .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+.footer-left img{
+   margin: auto;
+   
+}
+	.footer-section .footer-center i{
+		margin-left: 0;
+	}
+    .footer-section .footer-links a{
+        font-size: 13px;
+    }
+	.footer-section .footer-company-about{
+		max-width: 80%;
+		margin: auto; 
+	}
+	.footer-section .footer-icons a{
+		line-height: 29px;
+		width: 30px;
+		height: 30px;}
+	.footer-section .footer-center i{
+			font-size: 22px;
+			width: 32px;
+			height: 32px;}
+
+}
+  
+.partner-us-list {
+    width: 100%;
+    margin: 40px auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.pul-row {
+    margin-bottom: 0!important;
+}
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.service_paragraph{
+	display: flex;
+
+}

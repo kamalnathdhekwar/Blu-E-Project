@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blu-E Shashtav Bharat </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="">
+      <header class="sticky top-0 z-30 w-full px-2 py-4 bg-white shadow-lg shadow-indigo-900/40 sm:px-4">
+        <div class="flex items-center justify-between mx-auto max-w-7xl">
+          <a href="index.html" class="ml-3">
+           <img src="./assets/blue logo.jpg" alt="" class="md:h-11 h-8">
+          </a>
+          <div class="flex items-center space-x-1 ">
+            <ul class="hidden space-x-2 md:inline-flex">
+              <li><a href="index.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Home</a></li>
+              <li><a href="Services.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Services</a></li>
+              <li><a href="about.html" class="px-4 py-2 font-semibold text-gray-800 rounded">About Us</a></li>
+              <li><a href="contact.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Contact Us</a></li>
+              <li><a href="FAQS.html" class="px-4 py-2 font-semibold text-gray-800 rounded">FAQS</a></li>
+            </ul>
+            <div class="inline-flex md:hidden" x-data="{ open: false }">
+              <button class="flex-none px-2 " @click="open = true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-black" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h19M4 12h19M4 18h19" />
+                </svg>
+                <span class="sr-only">Open Menu</span>
+              </button>
+              <div
+                class="absolute top-0  right-0 z-50 flex flex-col p-2 pb-4 m-4 space-y-3 bg-indigo-100 g-violet-100b rounded shadow-slate-600 shadow-lg"
+                x-show.transition="open" @click.away="open = false" x-cloak>
+                <button class="self-end flex-none px-2 ml-2" @click="open = false">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span class="sr-only">Close Menu</span>
+                </button>
+                <ul class="space-y-10 text-center  p-12 ">
+                  <li><a href="index.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Home</a></li>
+                  <li><a href="Services.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Services</a></li>
+                  <li><a href="about.html" class="px-4 py-2 font-semibold text-gray-800 rounded">About Us</a></li>
+                  <li><a href="contact.html" class="px-4 py-2 font-semibold text-gray-800 rounded">Contact Us</a></li>
+                  <li><a href="FAQS.html" class="px-4 py-2 font-semibold text-gray-800 rounded">FAQS</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <!-- ***Home*** -->
+      <!-- ****section**** -->
+      <div class="hero-section md:mt-8 mt-2 bg-white">
+        <div class="flex flex-col md:flex-row 
+         md:space-x-5 ">
+          <!-- left -->
+          <div class="p-8 md:max-w-[50%]">
+             <div class="">
+              <img src="./assets/blue_full.jpeg" alt="" class="md:max-h-64 max-h-52 mx-auto">
+              <h1 class="font-semibold mt-3 text-lg md:text-2xl  w-full md:text-left text-center "><span class="text-indigo-900 text-xl md:text-3xl">BLU-</span ><span class="text-yellow-500 text-xl md:text-3xl">E</span> a  Brand By <span class="text-indigo-900 text-xl md:text-3xl">Shashtav Charging Bharat</span> PVT. LTD.</h1>
+
+              <h2 class="text-[15px] 
+              md:text-[20px] font-semibold text-gray-600  md:mt-4 text-left mt-5">
+              your premier destination for reliable and efficient electric vehicle charging solutions.
+             </h2>
+             </div>
+
+          </div>
+          <!-- left ended -->
+
+          <!-- right -->
+          <div class="p-5 md:max-w-[45%]" >
+           <img src="./assets/realBlu_clear.png.jpg" alt="" class="rounded-tl-[30%] rounded-br-[30%]  stroke-black   max-h-[80%] md:max-h-[100%] md:min-h-[50%] shadow-xl shadow-indigo-950">
+          </div>
+          <!-- right ended -->
+        </div>
+      </div>
+      <!-- hero section ended here -->
+
+    <!-- service section started here -->
+    <div class="mt-10 bg-slate-200" id="more">
+      <!-- service heading -->
+       <div class="text-center p-1 space-y-2">
+        <h1 class="md:text-[45px] text-[29px] font-bold text-transparent  bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 ">OUR SERVICES</h1>
+
+        <h1 class="md:text-[30px] text-[24px] font-bold text-indigo-800 px-4">We provide EV charging solution in all the existing and upcoming infrastructure.
+        </h1> 
+        <p  class="md:text-lg font-medium text-slate-600 px-6">Partner with us to make your establishment EV ready and further boost your profits.</p>
+      </div>
+       
+      <!-- service cards-->
+      <div class="container mx-auto pb-10">
+        <div class="p-1 mt-8 space-y-14 md:space-y-0 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 ">
+          <!-- card 1 -->
+             <div class="shadow-lg shadow-gray-400 rounded-lg hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0 m-5">
+              <!-- top -->
+              <div class=""><img src="./assets/home_station.jpg" alt="home" class="h-44 m-auto"></div>
+              <!-- bottom -->
+              <div class="text-center p-4">
+                <h2  class="font-semibold text-cyan-950 text-lg">HOME</h2>
+                <p  class="flex-wrap">Get a charging station <br>for your home</p>
+              </div>
+             </div>
+             <!-- individual card ended here -->
+              <!-- card 2 -->
+              <div class="shadow-lg shadow-gray-400 rounded-lg hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0 m-5">
+                <!-- top -->
+                <div class=""><img src="./assets/ev_commertial.png" alt="home" class="h-44 m-auto"></div>
+                <!-- bottom -->
+                <div class="text-center p-4">
+                  <h2  class="font-semibold text-cyan-950 text-lg">COMMERCIAL</h2>
+                  <p  class="">Attract EV owners with <br> chargers in your premisses</p>
+                </div>
+               </div>
+               
+                <!-- card 3 -->
+             <div class="shadow-lg shadow-gray-400 rounded-lg hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0 m-5">
+              <!-- top -->
+              <div class="pt-3"><img src="./assets/fleet_new.jpg" alt="home" class="h-44 m-auto "></div>
+              <!-- bottom -->
+              <div class="text-center p-4">
+                <h2  class="font-semibold text-cyan-950 text-lg">FLEET</h2>
+                <p  class="">Electrify your fleet with <br> our smart Charging Solutions</p>
+              </div>
+             </div>
+            
+              <!-- card 4 -->
+              <div class="shadow-lg shadow-gray-400 rounded-lg hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0 m-5">
+                <!-- top -->
+                <div class="pt-3"><img src="./assets/workplace_temp.webp" alt="home" class="h-44 m-auto"></div>
+                <!-- bottom -->
+                <div class="text-center p-4">
+                  <h2  class="font-semibold text-cyan-950 text-lg">WORKPLACE</h2>
+                  <p  class="">Get charging stations for <br>staffs and visitors</p>
+                </div>
+               </div>
+<!-- card 5 -->
+<div class="shadow-lg shadow-gray-400 rounded-lg hover:shadow-xl hover:shadow-gray-500 bg-white md:m-0 m-5">
+<!-- top -->
+<div class="pt-3"><img src="./assets/Construction_card.jpg" alt="home" class="h-44 m-auto"></div>
+<!-- bottom -->
+<div class="text-center p-4">
+  <h2  class="font-semibold text-cyan-950 text-lg">UNDER CONSTRUCTION PROJECTS</h2>
+  <p  class="">Enhance your amenities by providing charging stations to your new projects</p>
+</div>
+</div>
+               
+               <!-- individual card ended here -->
+        </div>
+      </div>
+       <!-- service cards ended here -->
+    </div>
+    <!-- service section is ended here -->
+
+    <!-- contact section -->
+    <div class="mt-7">
+      <div class="border-[1px] border- md:max-w-[70%]  m-auto max-w-[90%]  p-5 py-6  bg-indigo-50 rounded-md shadow-inner shadow-gray-600">
+    
+        <h1 class="md:text-[25px] text-[20px] font-bold text-indigo-800 px-4 text-center space-y-2">To Know More Just Click On The Email Id <br> 
+          <p class="text-yellow-500 text-[24px] font-medium">  
+          <i class="fa fa-envelope text-blue-600 "></i> 
+          <a href="mailto:info@blu-e.in">info@blu-e.in</a></p> 
+          <p class=""> OR Call Us On </p> 
+          <p class="text-yellow-500 md:text-xl text-lg"> 
+            <i class="fa fa-phone text-green-500"></i> +91 7620087268  <br>
+            <i class="fa fa-phone text-green-500"></i>  +91 8830973806</p>
+
+        </h1> 
+        <div class="text-center mt-2">
+          <a href="contact.html" class=" m-auto"><button class="px-3 py-1 text-white font-semibold bg-indigo-950 rounded-md hover:bg-indigo-900">Contact Us</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- contact section ended -->
+   
+    
+    <!-- charging Steps section -->
+
+    <div class="mt-14">
+
+      <div class="flex   justify-evenly md:flex-row flex-col mx-5 space-y-8 md:space-y-0">
+        <!-- left -->
+        <div class="">
+          <div class="space-y-5 mt-8 md:mx-1 mx-auto px-6  ">
+            <h1 class="text-indigo-950 md:text-5xl text-3xl font-semibold">EV Charging</h1>
+            <h2 class="text-yellow-700 font-semibold md:text-2xl text-xl">In 3 Simple Steps</h2>
+            <ul class="space-y-2 md:text-xl  text-slate-800 ">
+              <li class="flex space-x-3 "><img src="./assets/right_tick.jpg" alt="" class="max-h-8"><p>Discover Charging Stations</p></li>
+              <li class="flex space-x-3 "><img src="./assets/right_tick.jpg" alt="" class="max-h-8"><p>Charge seamlessly</p></li>
+              <li class="flex space-x-3 "><img src="./assets/right_tick.jpg" alt="" class="max-h-8"><p>Pay conveniently</p></li>
+            </ul>
+          </div>
+        </div>
+        <!-- left ended -->
+        <!-- right -->
+        <div class="">
+          <img src="./assets/charging_steps.jpg" alt="" class="max-h-80">
+        </div>
+        <!-- right enfded -->
+      </div>
+    </div>
+    
+      <!-- footer  -->
+      <footer class="footer-section ">
+
+        <div class="footer-left space-y-5">
+      <img src="./assets/blueE symbol.jpg " class="bg-black  h-[100%]  ">
+            <h1 class="text-slate-800 mt-3 text-lg">About Blu-E</h1>
+            <p class="footer-company-about text-slate-800">
+                
+              <b class="text-slate-800">Shashtav Charging Bharat Private Limited</b> is a MSME registered and Startup India recognized startup by two young Indian entrepreneurs with a brand name as BLU-E. 
+             </p>
+             <h1 class="mt-2 text-slate-800 font-normal">CIN: U27900MH2023PTC401951</h1>
+            
+            
+        </div>
+      
+        <div class="footer-center space-y-8 ">
+          <p class="footer-links text-slate-800 m-auto">
+            <a href="index.html" >Home</a>
+            |
+            <a href="Services.html">Services</a>
+            |
+            <a href="about.html">About Us</a>
+            |
+            <a href="contact.html">Contact Us</a>
+            |
+            <a href="FAQS.html">FAQS</a>
+                  </p>
+        <div class="footer-icons text-sm  space-x-3">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+          
+      
+        </div>
+        <div class="footer-right space-y-4 w-full">
+          <div class="flex space-x-4 ">
+            <i class="fa fa-map-marker bg-indigo-900 text-white p-3 px-4 rounded-3xl "></i>
+            <a href="https://www.google.co.in/maps/place/KAP's+REGENCY/@21.1786312,79.0568948,18.26z/data=!4m10!1m2!2m1!1sD-5+KAP's+Regency,+Behind+Ramdeobaba+Mandir,+Gittikhadan,+Nagpur-+440013+Pension+Nagar,+Nagpur+-+440013!3m6!1s0x3bd4c1af7b0e8cdb:0x734fc4553cf55fd5!8m2!3d21.1777928!4d79.0565919!15sCmdELTUgS0FQJ3MgUmVnZW5jeSwgQmVoaW5kIFJhbWRlb2JhYmEgTWFuZGlyLCBHaXR0aWtoYWRhbiwgTmFncHVyLSA0NDAwMTMgUGVuc2lvbiBOYWdhciwgTmFncHVyIC0gNDQwMDEzkgESYXBhcnRtZW50X2J1aWxkaW5n4AEA!16s%2Fg%2F11by_gfsdd?entry=ttu">  <p class=" text-slate-900  "> 
+              D-5 KAP's Regency, <br> Nagpur- 440013 </p></a>
+        </div>
+      
+        <div class="flex space-x-4">
+            <i class="fa fa-phone  bg-indigo-900 text-white p-3 px-[14px] rounded-full"></i>
+            <p>+91 7620087268  <br>  +91 8830973806</p>
+        </div>
+        <div class="flex space-x-4">
+            <i class="fa fa-envelope  bg-indigo-900 text-white p-3 px-[12px] rounded-full"></i>
+            <p><a href="mailto:info@blu-e.in " class="text-yellow-600">info@blu-e.in</a></p>
+        </div>
+        <div class="mt-5 ">
+          <p class="text-slate-800 ">© 2023 Shashtav Charging Bharat Pvt. Ltd.</p>
+    </div>
+           
+            </div>
+            
+      </footer>
+    
+
+    
+    </div> 
+  </body>
+</html>
